@@ -7,7 +7,6 @@ class Pessoa:
     def cumprimentar(self):
         return 'Olá'
 
-
 if __name__ == '__main__':
     mila = Pessoa(nome='Mila')
     dudu = Pessoa(mila, nome='Dudu')
