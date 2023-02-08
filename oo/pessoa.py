@@ -9,6 +9,14 @@ class Pessoa:
     def cumprimentar(self):
         return 'Olá'
 
+    @staticmethod ##Usado para criar metodos estaticos, que não usam obejtos como parâmetros
+    def metodo_estatico():
+        return 12
+
+    @classmethod #Usado para criar o metodo da Classe, podendo atribuir atributos como parâmetros.
+    def nome_e_atributos_de_classe(cls):
+        return f'{cls} - olhos {cls.olhos}'
+
 if __name__ == '__main__':
     mila = Pessoa(nome='Mila')
     dudu = Pessoa(mila, nome='Dudu')
@@ -23,5 +31,6 @@ if __name__ == '__main__':
     del dudu.sobrenome #Para remover qualquer atributo, não somente os dinâmicos
     dudu.olhos = 1 #É possível alterar o valor padrão.
     print(Pessoa.olhos, dudu.olhos)
-
     #print (f'{dudu.cumprimentar()}, me chamo {dudu.nome} e tenho {dudu.idade} anos!')
+    print(Pessoa.metodo_estatico(), dudu.metodo_estatico()) #Possivel chamar metodos estaticos tanto pela classe quando pelo objeto.
+    print(Pessoa.nome_e_atributos_de_classe(), dudu.nome_e_atributos_de_classe()) #Possivel chamar metodos estaticos tanto pela classe quando pelo objeto.
