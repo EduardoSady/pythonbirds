@@ -1,4 +1,6 @@
 class Pessoa:
+
+    olhos = 2 #Atributo de classe criado diretamente fora do __init__. Usado quando você tem uma "caracteristica padrão."
     def __init__(self, *filhos, nome=None, idade = 29): #Atributos de instancia e objetos são criados através dessa função.
         self.idade = idade
         self.nome = nome
@@ -19,5 +21,7 @@ if __name__ == '__main__':
     print(f'{dudu.sobrenome}')
     print(dudu.__dict__) ##Usado para analisar todos os atributos do objeto
     del dudu.sobrenome #Para remover qualquer atributo, não somente os dinâmicos
+    dudu.olhos = 1
+    print(Pessoa.olhos, dudu.olhos)
 
     #print (f'{dudu.cumprimentar()}, me chamo {dudu.nome} e tenho {dudu.idade} anos!')
