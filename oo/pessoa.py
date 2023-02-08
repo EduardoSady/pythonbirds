@@ -21,7 +21,7 @@ if __name__ == '__main__':
     print(f'{dudu.sobrenome}')
     print(dudu.__dict__) ##Usado para analisar todos os atributos do objeto
     del dudu.sobrenome #Para remover qualquer atributo, não somente os dinâmicos
-    dudu.olhos = 1
+    dudu.olhos = 1 #É possível alterar o valor padrão.
     print(Pessoa.olhos, dudu.olhos)
 
     #print (f'{dudu.cumprimentar()}, me chamo {dudu.nome} e tenho {dudu.idade} anos!')
