@@ -15,4 +15,9 @@ if __name__ == '__main__':
     for filho in dudu.filhos:
         print(filho.nome)
 
+    dudu.sobrenome = 'Sady' # Criando atributo dinâmico, fora do escopo do __init__
+    print(f'{dudu.sobrenome}')
+    print(dudu.__dict__) ##Usado para analisar todos os atributos do objeto
+    del dudu.sobrenome #Para remover qualquer atributo, não somente os dinâmicos
+
     #print (f'{dudu.cumprimentar()}, me chamo {dudu.nome} e tenho {dudu.idade} anos!')
