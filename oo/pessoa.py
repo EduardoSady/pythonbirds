@@ -33,4 +33,4 @@ if __name__ == '__main__':
     print(Pessoa.olhos, dudu.olhos)
     #print (f'{dudu.cumprimentar()}, me chamo {dudu.nome} e tenho {dudu.idade} anos!')
     print(Pessoa.metodo_estatico(), dudu.metodo_estatico()) #Possivel chamar metodos estaticos tanto pela classe quando pelo objeto.
- print(Pessoa.nome_e_atributos_de_classe(), dudu.nome_e_atributos_de_classe()) #Possivel chamar metodos estaticos tanto pela classe quando pelo objeto.
+    print(Pessoa.nome_e_atributos_de_classe(), dudu.nome_e_atributos_de_classe()) #Possivel chamar metodos estaticos tanto pela classe quando pelo objeto.
