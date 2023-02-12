@@ -17,6 +17,9 @@ class Pessoa:
     def nome_e_atributos_de_classe(cls):
         return f'{cls} - olhos {cls.olhos}'
 
+class Homem(Pessoa): #Criando a Classe herdando todos atributos da Classe passada como parâmetro
+    pass
+
 if __name__ == '__main__':
     mila = Pessoa(nome='Mila')
     dudu = Pessoa(mila, nome='Dudu')
